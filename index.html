@@ -1,4 +1,124 @@
 soma_xt_business_plan/
 ├── index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma XT Business Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Soma XT Business Plan</h1>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#market-analysis">Market Analysis</a></li>
+                <li><a href="#product-offering">Product Offering</a></li>
+                <!-- Add other sections as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>
+                <!-- Executive Summary content goes here -->
+            </p>
+        </section>
+        <section id="market-analysis">
+            <h2>Market Analysis</h2>
+            <p>
+                <!-- Market Analysis content goes here -->
+            </p>
+        </section>
+        <section id="product-offering">
+            <h2>Product Offering</h2>
+            <p>
+                <!-- Product Offering content goes here -->
+            </p>
+        </section>
+        <!-- Add other sections as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Soma XT. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
 ├── style.css
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
 └── script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const navbarLinks = document.querySelectorAll('#navbar a');
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetSection.offsetTop - 60,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
