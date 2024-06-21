@@ -4,67 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soma XT - Revolutionizing OTC Trading</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        .navbar {
+            background-color: #35424a;
         }
-        header {
-            background: #35424a;
+        .navbar-brand, .navbar-nav .nav-link {
             color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #e8491d;
         }
         #showcase {
             min-height: 400px;
-            background: url('trading.jpg') no-repeat 0 -400px;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
             text-align: center;
             color: #ffffff;
+            padding-top: 150px;
         }
         #showcase h1 {
-            margin-top: 100px;
             font-size: 55px;
             margin-bottom: 10px;
         }
         #showcase p {
             font-size: 20px;
         }
-        #main {
-            padding: 20px;
-            background: #ffffff;
+        #about, #services, #contact {
+            padding: 60px 0;
         }
         footer {
             background: #35424a;
@@ -75,21 +47,24 @@
     </style>
 </head>
 <body>
-    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <div id="branding">
-                <h1>Soma XT</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#">Soma XT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
+    <!-- Showcase -->
     <section id="showcase">
         <div class="container">
             <h1>Revolutionizing OTC Trading</h1>
@@ -97,27 +72,73 @@
         </div>
     </section>
 
-    <section id="main" class="container">
-        <h2>About Us</h2>
-        <p>At Soma XT, we are transforming the world of Over-The-Counter (OTC) trading by integrating cutting-edge trading, risk management, and financing solutions. Partnering with CQG, our platform caters to commodity hedgers, market makers, and financiers, providing a seamless, transparent, and efficient trading experience.</p>
-
-        <h3>Our Mission</h3>
-        <p>To offer an open, agnostic platform that combines trading, risk management, and financing, enhancing transparency, efficiency, and accessibility for all market participants.</p>
-
-        <h3>Why Choose Us?</h3>
-        <ul>
-            <li>Integrated Solutions: Combining trading, risk management, and margin call financing.</li>
-            <li>Advanced Technology: Leveraging CQG’s state-of-the-art platform.</li>
-            <li>Targeted Expertise: Focused on the agricultural commodities sector in Brazil, with plans for global expansion.</li>
-            <li>Financial Strength: Backed by a robust equity structure and extensive liquidity.</li>
-        </ul>
-
-        <h2>Contact Us</h2>
-        <p>Join us on our journey to revolutionize OTC trading. Contact us to learn more about how we can help you manage your trading needs more efficiently.</p>
+    <!-- About -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>At Soma XT, we are transforming the world of Over-The-Counter (OTC) trading by integrating cutting-edge trading, risk management, and financing solutions. Partnering with CQG, our platform caters to commodity hedgers, market makers, and financiers, providing a seamless, transparent, and efficient trading experience.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500" alt="About Us" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/100" alt="Service 1" class="img-fluid mb-3">
+                    <h3>Integrated Solutions</h3>
+                    <p>Combining trading, risk management, and margin call financing.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/100" alt="Service 2" class="img-fluid mb-3">
+                    <h3>Advanced Technology</h3>
+                    <p>Leveraging CQG’s state-of-the-art platform.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/100" alt="Service 3" class="img-fluid mb-3">
+                    <h3>Financial Strength</h3>
+                    <p>Backed by a robust equity structure and extensive liquidity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Us</h2>
+                    <p>Join us on our journey to revolutionize OTC trading. Contact us to learn more about how we can help you manage your trading needs more efficiently.</p>
+                    <address>
+                        <strong>Soma XT</strong><br>
+                        123 Main Street<br>
+                        City, State, ZIP<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500" alt="Contact" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>Soma XT, 2024 &copy; All Rights Reserved</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
