@@ -13,13 +13,13 @@
             background-color: #f4f4f4;
         }
         .navbar {
-            background-color: #35424a;
+            background-color: #2C3E50;
         }
         .navbar-brand, .navbar-nav .nav-link {
             color: #ffffff;
         }
         .navbar-brand:hover, .navbar-nav .nav-link:hover {
-            color: #e8491d;
+            color: #3498DB;
         }
         #showcase {
             min-height: 400px;
@@ -35,11 +35,26 @@
         #showcase p {
             font-size: 20px;
         }
-        #about, #services, #contact {
+        #about, #services, #contact, #features, #team, #testimonials {
             padding: 60px 0;
         }
+        #about {
+            background-color: #ecf0f1;
+        }
+        #services {
+            background-color: #bdc3c7;
+        }
+        #features {
+            background-color: #ecf0f1;
+        }
+        #team {
+            background-color: #bdc3c7;
+        }
+        #testimonials {
+            background-color: #ecf0f1;
+        }
         footer {
-            background: #35424a;
+            background: #2C3E50;
             color: #ffffff;
             text-align: center;
             padding: 30px 0;
@@ -58,6 +73,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -73,7 +91,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="bg-light">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -110,12 +128,93 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="bg-light">
+    <!-- Features -->
+    <section id="features">
         <div class="container">
+            <h2 class="text-center">Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Real-Time Market Data</h4>
+                    <p>Accurate and timely data leveraging CQG’s feeds.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Unified Trading Interface</h4>
+                    <p>Seamlessly manage listed and OTC trades.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Advanced Analytics</h4>
+                    <p>Powerful charting and analytical tools for better decision-making.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h4>Risk Management</h4>
+                    <p>Real-time calculation of Greeks, VaR, and other metrics to monitor and manage risk.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Order Management System</h4>
+                    <p>Integrated with CQG’s OMS for efficient order execution.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Margin Call Financing</h4>
+                    <p>Immediate capital to cover margin calls, preventing forced liquidation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <div class="container">
+            <h2 class="text-center">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/09/15/08/team-2736673_1280.jpg" alt="Team Member 1" class="img-fluid rounded-circle mb-3">
+                    <h4>John Doe</h4>
+                    <p>CEO</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/07/08/business-1280965_1280.jpg" alt="Team Member 2" class="img-fluid rounded-circle mb-3">
+                    <h4>Jane Smith</h4>
+                    <p>CTO</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/09/15/08/team-2736673_1280.jpg" alt="Team Member 3" class="img-fluid rounded-circle mb-3">
+                    <h4>Robert Brown</h4>
+                    <p>CFO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="text-center">What Our Clients Say</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Contact Us</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Soma XT has revolutionized our trading operations. The platform is seamless and incredibly efficient.</p>
+                        <footer class="blockquote-footer">Client Name <cite title="Source Title">Company Name</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">The integrated solutions provided by Soma XT have significantly improved our risk management processes.</p>
+                        <footer class="blockquote-footer">Client Name <cite title="Source Title">Company Name</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Get in Touch</h4>
                     <p>Join us on our journey to revolutionize OTC trading. Contact us to learn more about how we can help you manage your trading needs more efficiently.</p>
                     <address>
                         <strong>Soma XT</strong><br>
